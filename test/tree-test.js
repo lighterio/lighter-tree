@@ -76,6 +76,18 @@ describe('Tree', function () {
       var b = o.branch(1)
       is(o.children[0], b)
     })
+
+    it('can go deep', function () {
+      var a = new Tree(0)
+      var b = a.branch(1)
+      var c = b.branch(2)
+      var d = c.branch(3)
+      var e = d.branch(4)
+      is.instanceOf(e, Tree)
+      var f = mock.concat()
+      a.each(f)
+      is(f.value, '01234')
+    })
   })
 
   describe('.each', function () {

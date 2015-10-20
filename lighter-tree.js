@@ -34,10 +34,7 @@ var Tree = module.exports = Type.extend({
    * @return {Tree}        The resulting branch.
    */
   branch: function branch (value) {
-    var branch = new Tree(value)
-    var children = this.children
-    children[children.length] = branch
-    return branch
+    return this.leaf(new this.constructor(value))
   },
 
   /**
