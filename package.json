@@ -1,9 +1,9 @@
 {
   "name": "lighter-tree",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A lightweight trie implementation.",
   "dependencies": {
-    "lighter-type": ">=1.2.0 <2"
+    "lighter-type": ">=1.2.1 <2"
   },
   "devDependencies": {
     "exam": ">=1.1.0 <2"
