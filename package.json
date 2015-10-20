@@ -1,0 +1,61 @@
+{
+  "name": "lighter-tree",
+  "version": "1.0.0",
+  "description": "A lightweight trie implementation.",
+  "dependencies": {
+    "lighter-type": ">=1.2.0 <2"
+  },
+  "devDependencies": {
+    "exam": ">=1.1.0 <2"
+  },
+  "bundledDependencies": [
+    "lighter-type"
+  ],
+  "keywords": [
+    "tree",
+    "trie",
+    "data",
+    "structure",
+    "branch",
+    "branches",
+    "leaf",
+    "leaves",
+    "subtree",
+    "subtrie",
+    "radix",
+    "prefix",
+    "ntree",
+    "value",
+    "child",
+    "children",
+    "class",
+    "forest",
+    "utility",
+    "lighter",
+    "fast",
+    "lightweight",
+    "minimal",
+    "benchmark",
+    "speed",
+    "ops"
+  ],
+  "main": "lighter-tree.js",
+  "engines": {
+    "node": ">=0.8.28"
+  },
+  "scripts": {
+    "test": "./node_modules/exam/exam.js",
+    "cover": "./node_modules/exam/exam-cover.js",
+    "report": "open coverage/lcov-report/index.html",
+    "coveralls": "./node_modules/exam/exam-coveralls.js",
+    "bench": "./node_modules/exam/exam.js test/bench"
+  },
+  "repository": "https://github.com/lighterio/lighter-tree.git",
+  "bugs": "https://github.com/lighterio/lighter-tree/issues",
+  "homepage": "https://github.com/lighterio/lighter-tree",
+  "author": "Sam Eubank <sameubank@gmail.com>",
+  "contributors": [
+    "Sam Eubank <sameubank@gmail.com>"
+  ],
+  "license": "ISC"
+}
