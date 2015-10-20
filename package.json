@@ -1,6 +1,6 @@
 {
   "name": "lighter-tree",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A lightweight trie implementation.",
   "dependencies": {
     "lighter-type": ">=1.2.1 <2"
