@@ -48,7 +48,7 @@ var Tree = module.exports = Type.extend({
     var value = this.value
     if (typeof options === 'function') {
       fn = options
-      options = Tree.defaultEachOptions
+      options = this.constructor.defaultEachOptions
     }
     if (!options.leavesOnly) {
       if (options.allowUndefined || (value !== undefined)) {
@@ -57,7 +57,7 @@ var Tree = module.exports = Type.extend({
     }
     for (var i = 0, l = children.length; i < l; i++) {
       var child = children[i]
-      if (child instanceof Tree) {
+      if (child instanceof this.constructor) {
         child.each(options, fn)
       } else if (!options.branchesOnly) {
         if (options.allowUndefined || (child !== undefined)) {

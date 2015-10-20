@@ -1,5 +1,8 @@
 # lighter-tree Change Log
 
+## v1.2.0 - 2015-10-20
+* `minor` Made .each iterate using an overridable constructor.
+
 ## v1.1.0 - 2015-10-20
 * `minor` Made .branch instantiate an overridable constructor.
 
